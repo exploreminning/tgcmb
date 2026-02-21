@@ -1,0 +1,181 @@
+2026-02-17 16:58:40 [INFO] __main__: Running single job (--run-once)
+2026-02-17 16:58:43 [WARNING] news_fetcher: Feed parse error or empty: https://www.coindesk.com/arc/outboundfeeds/rss/
+2026-02-17 16:58:43 [ERROR] rewriter: Groq rewrite failed: Client.__init__() got an unexpected keyword argument 'proxies'
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Telegram MSSG bot\rewriter.py", line 51, in _call_groq
+    client = Groq(api_key=GROQ_API_KEY)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\site-packages\groq\_client.py", line 95, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        version=__version__,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        _strict_response_validation=_strict_response_validation,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\site-packages\groq\_base_client.py", line 795, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ~~~~~~~~~~~~~~~~~~~~~~^
+        base_url=base_url,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        follow_redirects=True,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+2026-02-17 16:58:43 [WARNING] scheduler: Skip (rewrite failed): https://cointelegraph.com/news/starknet-taps-ey-nightfall-institutional-grade-privacy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-17 16:58:43 [ERROR] rewriter: Groq rewrite failed: Client.__init__() got an unexpected keyword argument 'proxies'
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Telegram MSSG bot\rewriter.py", line 51, in _call_groq
+    client = Groq(api_key=GROQ_API_KEY)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\site-packages\groq\_client.py", line 95, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        version=__version__,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        _strict_response_validation=_strict_response_validation,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\site-packages\groq\_base_client.py", line 795, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ~~~~~~~~~~~~~~~~~~~~~~^
+        base_url=base_url,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        follow_redirects=True,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+2026-02-17 16:58:43 [WARNING] scheduler: Skip (rewrite failed): https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-17 16:58:43 [ERROR] rewriter: Groq rewrite failed: Client.__init__() got an unexpected keyword argument 'proxies'
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Telegram MSSG bot\rewriter.py", line 51, in _call_groq
+    client = Groq(api_key=GROQ_API_KEY)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\site-packages\groq\_client.py", line 95, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        version=__version__,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        _strict_response_validation=_strict_response_validation,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\site-packages\groq\_base_client.py", line 795, in __init__
+    self._client = http_client or SyncHttpxClientWrapper(
+                                  ~~~~~~~~~~~~~~~~~~~~~~^
+        base_url=base_url,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        follow_redirects=True,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
+2026-02-17 16:58:43 [WARNING] scheduler: Skip (rewrite failed): https://cointelegraph.com/news/monad-hires-ex-falconx-bvnk-and-optimism-executives-to-drive-institutional-expansion-post-mainnet-embargo-feb-17?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-17 17:11:22 [INFO] __main__: Running single job (--run-once)
+2026-02-17 17:11:25 [WARNING] news_fetcher: Feed parse error or empty: https://www.coindesk.com/arc/outboundfeeds/rss/
+2026-02-17 17:11:26 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-17 17:11:32 [INFO] scheduler: Posted: https://cointelegraph.com/news/starknet-taps-ey-nightfall-institutional-grade-privacy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-17 17:11:33 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-17 17:11:56 [INFO] scheduler: Posted: https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-17 17:11:57 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-17 17:12:00 [INFO] scheduler: Posted: https://cointelegraph.com/news/monad-hires-ex-falconx-bvnk-and-optimism-executives-to-drive-institutional-expansion-post-mainnet-embargo-feb-17?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-18 16:19:04 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-18 16:19:04 [INFO] __main__: Scheduler started: every 60 minutes
+2026-02-18 16:19:04 [INFO] apscheduler.scheduler: Added job "run_job" to job store "default"
+2026-02-18 16:19:04 [INFO] apscheduler.scheduler: Scheduler started
+2026-02-18 16:20:17 [INFO] __main__: Running single job (--run-once)
+2026-02-18 16:21:16 [INFO] __main__: Running single job (--run-once)
+2026-02-18 16:21:21 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-18 16:21:23 [INFO] scheduler: Posted: https://www.coindesk.com/markets/2026/02/18/bitcoin-s-plunge-signals-coming-ai-crisis-but-massive-fed-response-will-drive-new-record-high-arthur-hayes
+2026-02-18 16:21:28 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-18 16:21:32 [INFO] scheduler: Posted: https://www.coindesk.com/policy/2026/02/18/hyperliquid-starts-defi-lobbying-group-with-usd29-million-token-backing
+2026-02-18 16:21:33 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-18 16:21:38 [INFO] scheduler: Posted: https://www.coindesk.com/business/2026/02/18/tokenized-pre-ipo-shares-topic-ignites-legal-debate-at-consensus-hong-kong-2026
+2026-02-19 21:39:49 [INFO] __main__: Running single job (--run-once)
+2026-02-19 21:40:25 [INFO] scheduler: Posted market snapshot
+2026-02-19 21:40:58 [ERROR] opinions_fetcher: CryptoPanic fetch failed: 404 Client Error: Not Found for url: https://cryptopanic.com/api/v1/posts/?auth_token=518b72f9ee51f5224e94958050177050b23860b6&filter=important&public=true
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Telegram MSSG bot\opinions_fetcher.py", line 37, in fetch_opinions
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://cryptopanic.com/api/v1/posts/?auth_token=518b72f9ee51f5224e94958050177050b23860b6&filter=important&public=true
+2026-02-19 21:41:50 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-19 21:41:53 [INFO] scheduler: Posted: https://bitcoinist.com/xrp-holders-face-critical-analysts-highlight-setup/
+2026-02-19 21:41:55 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-19 21:42:18 [INFO] scheduler: Posted: https://cointelegraph.com/news/tightening-bitcoin-bollinger-bands-forecast-explosive-price-move-but-which-way?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-19 21:42:20 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-19 21:42:37 [INFO] scheduler: Posted: https://cointelegraph.com/news/proshares-launches-treasury-etf-structured-to-qualify-for-stablecoin-reserves-under-genius-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-19 21:55:46 [INFO] __main__: Running single job (--run-once)
+2026-02-19 21:55:55 [INFO] scheduler: Posted market snapshot
+2026-02-19 21:55:58 [ERROR] opinions_fetcher: CryptoPanic fetch failed: 404 Client Error: Not Found for url: https://cryptopanic.com/api/posts/?auth_token=518b72f9ee51f5224e94958050177050b23860b6&public=true
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\Telegram MSSG bot\opinions_fetcher.py", line 37, in fetch_opinions
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python314\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://cryptopanic.com/api/posts/?auth_token=518b72f9ee51f5224e94958050177050b23860b6&public=true
+2026-02-19 21:56:09 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-19 21:56:14 [INFO] scheduler: Posted: https://cryptopotato.com/bitcoin-network-stagnation-active-supply-plateaus-as-price-volatility-fades/
+2026-02-19 21:56:18 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-19 21:56:22 [INFO] scheduler: Posted: https://www.newsbtc.com/news/litecoin/can-litecoin-bounce-to-285/
+2026-02-19 21:56:33 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-19 21:56:57 [INFO] scheduler: Posted: https://www.newsbtc.com/breaking-news-ticker/sell-bitcoin-now-peter-schiff-warns-predicts-20000-target-on-breakdown/
+2026-02-20 21:03:28 [INFO] __main__: Running single job (--run-once)
+2026-02-20 21:03:47 [INFO] scheduler: Posted market snapshot
+2026-02-20 21:03:50 [WARNING] opinions_fetcher: CRYPTOPANIC_API_KEY not set, skipping opinions
+2026-02-20 21:04:05 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 21:04:10 [INFO] scheduler: Posted: https://cointelegraph.com/news/trump-10-global-tariff-scotus-ruling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-20 21:04:14 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 21:04:25 [INFO] scheduler: Posted: https://bitcoinist.com/thinking-of-buying-bitcoin/
+2026-02-20 21:04:25 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 21:04:34 [INFO] scheduler: Posted: https://cointelegraph.com/news/scotus-strikes-trump-tariffs-alternative-plan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-20 21:23:26 [INFO] __main__: Running single job (--run-once)
+2026-02-20 21:23:36 [INFO] scheduler: Posted market snapshot
+2026-02-20 21:23:39 [WARNING] opinions_fetcher: CRYPTOPANIC_API_KEY not set, skipping opinions
+2026-02-20 21:25:10 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 21:25:15 [INFO] scheduler: Posted: https://cointelegraph.com/news/bitcoin-bears-at-risk-of-600m-liquidation-raising-chance-for-rally-to-70k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-20 21:25:19 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 21:25:21 [INFO] scheduler: Posted: https://cointelegraph.com/news/dutch-authorities-call-on-polymarket-arm-to-cease-activities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-20 21:25:22 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 21:25:25 [INFO] scheduler: Posted: https://cryptopotato.com/europes-societe-generale-expands-euro-stablecoin-to-the-xrp-ledger/
+2026-02-20 21:38:34 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:38:34 [INFO] __main__: Scheduler started: every 60 minutes
+2026-02-20 21:38:34 [INFO] apscheduler.scheduler: Added job "run_job" to job store "default"
+2026-02-20 21:38:34 [INFO] apscheduler.scheduler: Scheduler started
+2026-02-20 21:40:50 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:40:50 [INFO] __main__: Scheduler started: every 60 minutes
+2026-02-20 21:40:50 [INFO] apscheduler.scheduler: Added job "run_job" to job store "default"
+2026-02-20 21:40:50 [INFO] apscheduler.scheduler: Scheduler started
+2026-02-20 22:40:50 [INFO] apscheduler.executors.default: Running job "run_job (trigger: interval[1:00:00], next run at: 2026-02-20 23:40:50 CET)" (scheduled at 2026-02-20 22:40:50.793349+01:00)
+2026-02-20 22:41:14 [INFO] scheduler: Posted market snapshot
+2026-02-20 22:41:17 [WARNING] opinions_fetcher: CRYPTOPANIC_API_KEY not set, skipping opinions
+2026-02-20 22:42:15 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 22:42:39 [INFO] scheduler: Posted: https://cointelegraph.com/news/tokenized-real-estate-advance-dubai-maldives?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+2026-02-20 22:42:39 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 22:43:02 [INFO] scheduler: Posted: https://www.coindesk.com/markets/2026/02/20/bitcoin-shrugs-off-trump-s-new-tariffs-nears-usd68-000-as-altcoins-lead-modest-bounce
+2026-02-20 22:43:13 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 22:43:24 [INFO] scheduler: Posted: https://www.newsbtc.com/breaking-news-ticker/bitcoin-and-ethereum-post-worst-start-to-a-year-on-record-fortune/
+2026-02-20 22:43:24 [INFO] apscheduler.executors.default: Job "run_job (trigger: interval[1:00:00], next run at: 2026-02-20 23:40:50 CET)" executed successfully
+2026-02-20 23:40:50 [INFO] apscheduler.executors.default: Running job "run_job (trigger: interval[1:00:00], next run at: 2026-02-21 00:40:50 CET)" (scheduled at 2026-02-20 23:40:50.793349+01:00)
+2026-02-20 23:40:54 [INFO] scheduler: Posted market snapshot
+2026-02-20 23:40:57 [WARNING] opinions_fetcher: CRYPTOPANIC_API_KEY not set, skipping opinions
+2026-02-20 23:42:26 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 23:42:30 [INFO] scheduler: Posted: https://bitcoinist.com/ethereum-multi-year-accumulation-high/
+2026-02-20 23:42:31 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 23:42:33 [INFO] scheduler: Posted: https://cryptopotato.com/cz-returns-to-us-for-trump-backed-crypto-event/
+2026-02-20 23:42:36 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-20 23:42:54 [INFO] scheduler: Posted: https://www.coindesk.com/policy/2026/02/20/sec-makes-quiet-shift-to-brokers-stablecoin-holdings-that-may-pack-big-results
+2026-02-20 23:42:54 [INFO] apscheduler.executors.default: Job "run_job (trigger: interval[1:00:00], next run at: 2026-02-21 00:40:50 CET)" executed successfully
+2026-02-21 00:40:50 [INFO] apscheduler.executors.default: Running job "run_job (trigger: interval[1:00:00], next run at: 2026-02-21 01:40:50 CET)" (scheduled at 2026-02-21 00:40:50.793349+01:00)
+2026-02-21 00:41:01 [INFO] scheduler: Posted market snapshot
+2026-02-21 00:41:04 [WARNING] opinions_fetcher: CRYPTOPANIC_API_KEY not set, skipping opinions
